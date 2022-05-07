@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header id="header" class="header active">
+        <div class="wrapper header__content">
+            <div class="header__prev">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+            <div class="header__logo">
+            </div>
+            <div class="header__support">
+                <i class='bx bx-support'></i>
+                <span>Hổ trợ</span>
+                <div class="header__icon">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="">
+                        Trang chủ
+                    </a></li>
+                <li><a href="">
+                        Trang chủ
+                    </a></li>
+                <li><a href="">
+                        Trang chủ
+                    </a></li>
+                <li>
+                    <div>VỀ BOOKINGCARE</div>
+                </li>
+                <li>
+                    <a href="">Về cho bệnh nhân</a>
+                </li>
+                <li>
+                    <a href="">Về cho bác sỹ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu--overlay">
+        </div>
+    </header>
+    <div class="order__top" style="background: url('https://cdn.bookingcare.vn/fo/2019/12/13/120933-tieu-hoa.jpg');">
+        <div class="order__container">
+            <div class="wrapper">
+                <h3>Tiêu hóa</h3>
+                <h4>Bác sĩ Chuyên khoa Tiêu hóa</h4>
+                <p>Danh sách các bác sĩ Tiêu hóa uy tín đầu ngành tại Việt Nam:</p>
+                <ul>
+                    <li>Các chuyên gia có quá trình đào tạo bài bản, kinh nghiệm công tác tại các bệnh viện lớn về
+                        chuyên
+                        ngành Tiêu hóa tại Hà Nội</li>
+                    <li>Các giáo sư, phó giáo sư là giảng viên Đại học Y khoa Hà Nội</li>
+                    <li>Các bác sĩ đã, đang công tác tại các bệnh viện hàng đầu như Bệnh viện Bạch Mai, Bệnh Viện Việt
+                        Đức,
+                        Bệnh Viện Nhi Trung ương, Bệnh viện Y học Cổ truyền Việt Nam...</li>
+                    <li>Được nhà nước công nhận các danh hiệu Thầy thuốc nhân dân, thầy thuốc ưu tú, bác sĩ cao cấp,...
+                    </li>
+                </ul>
+                <h4>Tư vấn, khám và điều trị các Bệnh Tiêu hóa</h4>
+                <ul>
+                    <li>Ăn uống kém, không ngon</li>
+                    <li>Rối loạn tiêu hóa, táo bón, trĩ</li>
+                    <li>Nhiễm vi khuẩn HP (Helicobacter pylori)</li>
+                    <li>Nội soi dạ dày, đại tràng, tiêu hóa</li>
+                    <li>Buồn nôn, chướng bụng, đầy bụng ợ chua, đầy hơi</li>
+                    <li>Co thắt thực quản, Hội chứng ruột kích thích</li>
+                    <li>Đau bụng, dạ dày, đại tràng, thượng vị</li>
+                    <li>Viêm đại tràng, dạ dày, tá tràng</li>
+                    <li>Ung thư dạ dày, U nang tuyến tụy</li>
+                    <li>Bệnh lý về gan, mật</li>
+                    <li>...</li>
+                </ul>
+            </div>
+            <div>
+                <div class="wrapper">
+                    <span class="view__more hide">Đọc thêm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order__wrapper">
+        <div class="wrapper">
+            <select class="order__select" name="" id="">
+                <option value="">Toàn quốc</option>
+            </select>
+            <div class="order__item row">
+                <div class="order__item--left col-lg-6">
+                    <div>
+                        <img class="order__item--left--image"
+                            src="https://cdn.bookingcare.vn/fr/w200/2019/12/31/155650-gs-ha-van-quyet.jpg" alt=""
+                            srcset="">
+                        <span class="order__item--left--text">
+                            Xem thêm
+                        </span>
+                    </div>
+                    <div class="order__item--left--content">
+                        <h3>Giáo sư, Tiến sĩ Hà Văn Quyết</h3>
+                        <p>Chuyên gia trên 35 năm kinh nghiệm trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Chuyên gia đầu ngành trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Nguyên Giám đốc Bệnh viện Đại học Y Hà Nội</p>
+                        <p>Bác sĩ khám cho người bệnh từ 3 tuổi trở lên</p>
+                        <div class="order__item--left--content--footer">
+                            <span class="bx bx-current-location"></span>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__item--right col-lg-6">
+                    <div class="order__item--right--calendar">
+                        <span>THỨ 2 - 9/5</span>
+                        <span class="bx bx-chevron-down"></span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-calendar'></i>
+                        <span>LỊCH KHÁM</span>
+                    </div>
+                    <div class="order__item--right--list-calendar">
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                    </div>
+                    <p>Chọn <span class="bx bx-pointer"></span> và đặt (Phí đặt lịch 0đ)</p>
+                    <ul>
+                        <li>ĐỊA CHỈ KHÁM</li>
+                        <li>Bệnh viện Ung bướu Hưng Việt</li>
+                        <li>34 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                    </ul>
+                    <div>
+                        <span>GIÁ KHÁM:</span>
+                        <span>500.000đ.</span>
+                        <span>Xem chi tiết</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order__item row">
+                <div class="order__item--left col-lg-6">
+                    <div>
+                        <img class="order__item--left--image"
+                            src="https://cdn.bookingcare.vn/fr/w200/2019/12/31/155650-gs-ha-van-quyet.jpg" alt=""
+                            srcset="">
+                        <span class="order__item--left--text">
+                            Xem thêm
+                        </span>
+                    </div>
+                    <div class="order__item--left--content">
+                        <h3>Giáo sư, Tiến sĩ Hà Văn Quyết</h3>
+                        <p>Chuyên gia trên 35 năm kinh nghiệm trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Chuyên gia đầu ngành trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Nguyên Giám đốc Bệnh viện Đại học Y Hà Nội</p>
+                        <p>Bác sĩ khám cho người bệnh từ 3 tuổi trở lên</p>
+                        <div class="order__item--left--content--footer">
+                            <span class="bx bx-current-location"></span>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__item--right col-lg-6">
+                    <div class="order__item--right--calendar">
+                        <span>THỨ 2 - 9/5</span>
+                        <span class="bx bx-chevron-down"></span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-calendar'></i>
+                        <span>LỊCH KHÁM</span>
+                    </div>
+                    <div class="order__item--right--list-calendar">
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                    </div>
+                    <p>Chọn <span class="bx bx-pointer"></span> và đặt (Phí đặt lịch 0đ)</p>
+                    <ul>
+                        <li>ĐỊA CHỈ KHÁM</li>
+                        <li>Bệnh viện Ung bướu Hưng Việt</li>
+                        <li>34 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                    </ul>
+                    <div>
+                        <span>GIÁ KHÁM:</span>
+                        <span>500.000đ.</span>
+                        <span>Xem chi tiết</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order__item row">
+                <div class="order__item--left col-lg-6">
+                    <div>
+                        <img class="order__item--left--image"
+                            src="https://cdn.bookingcare.vn/fr/w200/2019/12/31/155650-gs-ha-van-quyet.jpg" alt=""
+                            srcset="">
+                        <span class="order__item--left--text">
+                            Xem thêm
+                        </span>
+                    </div>
+                    <div class="order__item--left--content">
+                        <h3>Giáo sư, Tiến sĩ Hà Văn Quyết</h3>
+                        <p>Chuyên gia trên 35 năm kinh nghiệm trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Chuyên gia đầu ngành trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Nguyên Giám đốc Bệnh viện Đại học Y Hà Nội</p>
+                        <p>Bác sĩ khám cho người bệnh từ 3 tuổi trở lên</p>
+                        <div class="order__item--left--content--footer">
+                            <span class="bx bx-current-location"></span>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__item--right col-lg-6">
+                    <div class="order__item--right--calendar">
+                        <span>THỨ 2 - 9/5</span>
+                        <span class="bx bx-chevron-down"></span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-calendar'></i>
+                        <span>LỊCH KHÁM</span>
+                    </div>
+                    <div class="order__item--right--list-calendar">
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                    </div>
+                    <p>Chọn <span class="bx bx-pointer"></span> và đặt (Phí đặt lịch 0đ)</p>
+                    <ul>
+                        <li>ĐỊA CHỈ KHÁM</li>
+                        <li>Bệnh viện Ung bướu Hưng Việt</li>
+                        <li>34 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                    </ul>
+                    <div>
+                        <span>GIÁ KHÁM:</span>
+                        <span>500.000đ.</span>
+                        <span>Xem chi tiết</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order__item row">
+                <div class="order__item--left col-lg-6">
+                    <div>
+                        <img class="order__item--left--image"
+                            src="https://cdn.bookingcare.vn/fr/w200/2019/12/31/155650-gs-ha-van-quyet.jpg" alt=""
+                            srcset="">
+                        <span class="order__item--left--text">
+                            Xem thêm
+                        </span>
+                    </div>
+                    <div class="order__item--left--content">
+                        <h3>Giáo sư, Tiến sĩ Hà Văn Quyết</h3>
+                        <p>Chuyên gia trên 35 năm kinh nghiệm trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Chuyên gia đầu ngành trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Nguyên Giám đốc Bệnh viện Đại học Y Hà Nội</p>
+                        <p>Bác sĩ khám cho người bệnh từ 3 tuổi trở lên</p>
+                        <div class="order__item--left--content--footer">
+                            <span class="bx bx-current-location"></span>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__item--right col-lg-6">
+                    <div class="order__item--right--calendar">
+                        <span>THỨ 2 - 9/5</span>
+                        <span class="bx bx-chevron-down"></span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-calendar'></i>
+                        <span>LỊCH KHÁM</span>
+                    </div>
+                    <div class="order__item--right--list-calendar">
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                    </div>
+                    <p>Chọn <span class="bx bx-pointer"></span> và đặt (Phí đặt lịch 0đ)</p>
+                    <ul>
+                        <li>ĐỊA CHỈ KHÁM</li>
+                        <li>Bệnh viện Ung bướu Hưng Việt</li>
+                        <li>34 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                    </ul>
+                    <div>
+                        <span>GIÁ KHÁM:</span>
+                        <span>500.000đ.</span>
+                        <span>Xem chi tiết</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order__item row">
+                <div class="order__item--left col-lg-6">
+                    <div>
+                        <img class="order__item--left--image"
+                            src="https://cdn.bookingcare.vn/fr/w200/2019/12/31/155650-gs-ha-van-quyet.jpg" alt=""
+                            srcset="">
+                        <span class="order__item--left--text">
+                            Xem thêm
+                        </span>
+                    </div>
+                    <div class="order__item--left--content">
+                        <h3>Giáo sư, Tiến sĩ Hà Văn Quyết</h3>
+                        <p>Chuyên gia trên 35 năm kinh nghiệm trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Chuyên gia đầu ngành trong lĩnh vực bệnh lý Tiêu hóa</p>
+                        <p>Nguyên Giám đốc Bệnh viện Đại học Y Hà Nội</p>
+                        <p>Bác sĩ khám cho người bệnh từ 3 tuổi trở lên</p>
+                        <div class="order__item--left--content--footer">
+                            <span class="bx bx-current-location"></span>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__item--right col-lg-6">
+                    <div class="order__item--right--calendar">
+                        <span>THỨ 2 - 9/5</span>
+                        <span class="bx bx-chevron-down"></span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-calendar'></i>
+                        <span>LỊCH KHÁM</span>
+                    </div>
+                    <div class="order__item--right--list-calendar">
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                        <div class="order__item--right--item">
+                            08:30 - 09:00
+                        </div>
+                    </div>
+                    <p>Chọn <span class="bx bx-pointer"></span> và đặt (Phí đặt lịch 0đ)</p>
+                    <ul>
+                        <li>ĐỊA CHỈ KHÁM</li>
+                        <li>Bệnh viện Ung bướu Hưng Việt</li>
+                        <li>34 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                    </ul>
+                    <div>
+                        <span>GIÁ KHÁM:</span>
+                        <span>500.000đ.</span>
+                        <span>Xem chi tiết</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer__main">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <div class="footer__main--logo">
+                            <img src="https://bookingcare.vn/assets/icon/bookingcare-2020.svg" alt="">
+                        </div>
+                    </li>
+                    <li>Công ty Cổ phần Công nghệ BookingCare</li>
+                    <li>
+                        <i class='bx bx-current-location'></i>
+                        <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    </li>
+                    <li>
+                        <i class="bx bx-check"></i>
+                        <p>ĐKKD số: 0106790291. Sở KHĐT Hà Nội cấp ngày 16/03/2015</p>
+                    </li>
+                    <li>
+                        <img src="https://bookingcare.vn/assets/icon/bo-cong-thuong.svg" alt="">
+                        <img src="https://bookingcare.vn/assets/icon/bo-cong-thuong.svg" alt="">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">Liên hệ hợp tác</a>
+                    </li>
+                    <li>
+                        <a href="">Câu hỏi thường gặp</a>
+                    </li>
+                    <li>
+                        <a href="">Điều khoản sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Chính sách Bảo mật</a>
+                    </li>
+                    <li>
+                        <a href="">Quy trình hỗ trợ giải quyết khiếu nại</a>
+                    </li>
+                    <li>
+                        <a href="">Quy chế hoạt động</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Trụ sở tại Hà Nội</h4>
+                        <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    </li>
+                    <li>
+                        <h4>Trụ sở tại Hà Nội</h4>
+                        <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    </li>
+                    <li>
+                        <h4>Trụ sở tại Hà Nội</h4>
+                        <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__end">
+            <div class="wrapper footer__end--main">
+                <span>@20222 BookingCare</span>
+                <div>
+                    <a href="" class="bx bxl-facebook"></a>
+                    <a href="" class="bx bxl-youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

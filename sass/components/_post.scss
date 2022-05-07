@@ -1,0 +1,156 @@
+.post {
+    &__left {
+        &--title {
+            font-weight: bold;
+            font-size: 2.4rem;
+            margin-bottom: 1.2rem;
+        }
+        & > ul {
+            line-height: 2rem;
+            font-size: 1.4rem;
+            color: gray;
+            a {
+                color: var(--color);
+            }
+            margin-bottom: 2rem;
+        }
+        &--small-desc {
+            margin: 1rem 0rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        &--warning {
+            background-color: #dff0d8;
+            padding: 1.6rem;
+            @include flexJustifyAlign(flex-start, center);
+            gap: 1rem;
+            border-radius: 1.2rem;
+            margin: 3rem 0rem;
+            span {
+                color: orange;
+                font-size: 2.4rem;
+            }
+            p {
+                color: #3c763d;
+                font-size: 1.4rem;
+            }
+        }
+        &--content {
+            line-height: 2.8rem;
+            img {
+                width: 100%;
+                margin: 1rem 0rem;
+            }
+        }
+    }
+    &__right {
+        p {
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+            color: gray;
+        }
+        ul {
+            li {
+                padding: 0.5rem 0rem;
+                a {
+                    color: var(--color);
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    &__socical {
+        @include flexJustifyAlign(center, center);
+        gap: 1rem;
+        margin: 2rem 0rem;
+        button {
+            padding: 0.8rem 1rem;
+            @include flexJustifyAlign(center, center);
+            gap: 1rem;
+            background-color: #1877f2;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 0.7rem;
+        }
+    }
+    &__end {
+        padding: 1.5rem;
+        border-bottom: 0.5rem solid #eee;
+        border-top: 0.5rem solid #eee;
+        margin-bottom: 3rem;
+        & > p {
+            padding: 0.5rem 0rem;
+            font-size: 1.4rem;
+            cursor: pointer;
+            @include flexJustifyAlign(flex-start, center);
+            gap: 1rem;
+            color: var(--color);
+        }
+        &--doc {
+            display: none;
+            padding: 1.2rem;
+        }
+        &--doc.active {
+            display: block;
+        }
+        &--feedback {
+            display: none;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            & > p {
+                margin-bottom: 1rem;
+            }
+            form {
+                div {
+                    margin-bottom: 1rem;
+                    position: relative;
+                    textarea {
+                        &::placeholder {
+                            font-family: var(--font-family);
+                        }
+                        height: 14rem;
+                        &:focus {
+                            border-color: var(--color);
+                        }
+                        width: 100%;
+                        padding: 1rem;
+                        padding-left: 4rem;
+                        border: 0.1rem solid rgba(128, 128, 128, 0.247);
+                    }
+                    input {
+                        &::placeholder {
+                            font-family: var(--font-family);
+                        }
+                        &:focus {
+                            border-color: var(--color);
+                        }
+                        width: 100%;
+                        padding: 1rem;
+                        padding-left: 4rem;
+                        border: 0.1rem solid rgba(128, 128, 128, 0.247);
+                    }
+                    &:nth-child(1) {
+                        span {
+                            top: 1rem;
+                            transform: none !important;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        left: 1rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: gray;
+                    }
+                }
+                button {
+                    padding: 1rem;
+                    border: 0.1rem solid rgba(128, 128, 128, 0.247);
+                }
+            }
+        }
+        &--feedback.active {
+            display: block;
+        }
+    }
+}

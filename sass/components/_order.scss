@@ -1,0 +1,179 @@
+.order {
+    &__top {
+        background: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__container.show > .wrapper {
+        height: auto;
+        overflow: unset;
+    }
+    &__container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        padding: 1rem;
+    }
+    &__container > .wrapper {
+        height: 16rem;
+        overflow: hidden;
+        h3 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-bottom: 1.8rem;
+        }
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul {
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+            list-style-type: disc;
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+    &__wrapper {
+        background-color: #eeeeee;
+        padding: 2rem 0rem;
+    }
+    &__select {
+        margin: 1rem 0rem;
+        margin-bottom: 2rem;
+        padding: 0.8rem;
+    }
+    &__item {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 2rem 0rem;
+        border-radius: 1.2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: flex-start;
+        &--left {
+            display: flex;
+            padding: 0rem 1rem;
+            border-right: 0.1rem solid rgba(128, 128, 128, 0.088);
+            & > div {
+                &:nth-child(1) {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+            &--image {
+                width: 16rem;
+                height: 16rem;
+                border-radius: 100rem;
+            }
+            &--text {
+                margin-top: 1rem;
+                color: var(--color);
+            }
+            &--content {
+                padding-left: 2rem;
+                h3 {
+                    color: var(--color);
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    line-height: 2.4rem;
+                    font-size: 1.5rem;
+                    color: gray;
+                }
+                &--footer {
+                    margin: 1rem 0rem;
+                    @include flexJustifyAlign(flex-start, center);
+                    gap: 1rem;
+                    color: gray;
+                }
+            }
+        }
+        &--right {
+            padding-left: 2rem;
+            &--calendar {
+                display: inline-block;
+                padding: 0.4rem 0rem;
+                border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+                margin-bottom: 0.8rem;
+                color: var(--color);
+                cursor: pointer;
+            }
+            & > div {
+                &:nth-child(2) {
+                    @include flexJustifyAlign(flex-start, center);
+                    gap: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 0.1rem 0rem;
+                    color: gray;
+                }
+            }
+            &--list-calendar {
+                padding-top: 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem 1rem;
+            }
+            &--item {
+                cursor: pointer;
+                display: inline-block;
+                background-color: rgba(128, 128, 128, 0.135);
+                padding: 1.6rem 2.5rem;
+                font-weight: 600;
+                &:hover {
+                    background-color: var(--color);
+                    color: #fff;
+                }
+            }
+            & > p {
+                font-weight: 600;
+                margin: 1rem 0rem;
+                font-size: 1.4rem;
+                color: gray;
+            }
+            & > ul {
+                margin: 2.4rem 0rem;
+                line-height: 2.4rem;
+                li {
+                    &:first-child {
+                        color: gray;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            & > div {
+                &:last-child {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    span {
+                        &:nth-child(1) {
+                            font-weight: 500;
+                            color: gray;
+                        }
+                        &:nth-child(3) {
+                            cursor: pointer;
+                            color: var(--color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.view__more {
+    display: block;
+    margin: 2rem 0rem;
+    color: var(--color);
+    font-size: 1.4rem;
+    padding: 1.4rem;
+    background-color: #fff;
+    cursor: pointer;
+}

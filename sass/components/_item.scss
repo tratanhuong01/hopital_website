@@ -25,6 +25,7 @@
             max-width: 100%;
             display: flex !important;
             align-items: center;
+            margin-bottom: 2rem;
             &--image {
                 padding-top: 20%;
             }
@@ -32,6 +33,11 @@
                 padding-left: 2rem;
                 font-weight: bold;
             }
+        }
+        &--wrapper {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }

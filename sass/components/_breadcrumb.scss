@@ -1,0 +1,16 @@
+.breadcrumb {
+    margin: 3rem auto;
+    ul {
+        @include flexJustifyAlign(flex-start, center);
+        flex-wrap: wrap;
+        gap: 1rem;
+        li.line {
+            color: gray !important;
+        }
+        li {
+            a {
+                color: var(--color);
+            }
+        }
+    }
+}
