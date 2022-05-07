@@ -1,0 +1,86 @@
+.footer {
+    &__end {
+        background-color: #64b9e5;
+        padding: 3rem 0rem;
+        &--main {
+            @include flexJustifyAlign(space-between, center);
+            color: #fff;
+            span {
+                font-size: 1.4rem;
+            }
+            div {
+                display: flex;
+                font-size: 3.6rem;
+                gap: 2rem;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__main {
+        background-color: #efefef;
+        padding: 3rem 0rem;
+        display: flex;
+        @include max-md {
+            display: block;
+        }
+        justify-content: space-between;
+        &--logo {
+            max-width: 36rem;
+            height: auto;
+            img {
+                object-fit: cover;
+            }
+        }
+        ul {
+            @include max-lg {
+                padding: 1rem 0.8rem;
+            }
+            &:nth-child(1) {
+                @include min-lg {
+                    width: 50%;
+                }
+                font-size: 1.5rem;
+                li {
+                    line-height: 2rem;
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+                    padding: 1rem 0rem;
+                    @include flexJustifyAlign(flex-start, center);
+                    gap: 1rem;
+                    img {
+                        width: 20rem;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                @include min-lg {
+                    width: 25%;
+                }
+                @include max-md {
+                    padding: 1rem;
+                }
+                padding: 0rem 4rem;
+                li {
+                    padding: 1rem 0rem;
+                    a {
+                        color: var(--color);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                @include min-lg {
+                    width: 25%;
+                }
+                li {
+                    h4 {
+                        font-size: 1.6rem;
+                    }
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
+    }
+}

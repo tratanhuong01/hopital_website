@@ -1,0 +1,85 @@
+.header {
+    @include max-md {
+        padding: 0rem 1rem;
+    }
+    &__content {
+        padding: 1.6rem 0rem;
+        @include flexJustifyAlign(space-between, center);
+    }
+    &__logo {
+        a {
+            display: block;
+            img {
+                width: 20rem;
+            }
+        }
+    }
+    &__menu {
+        padding-top: 1rem;
+        background: #ffffff;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 30rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        ul {
+            li {
+                padding: 1.4rem 1rem;
+                a {
+                    color: var(--color);
+                }
+            }
+        }
+        &.active {
+            transform: translateX(0);
+        }
+        &--overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 0.8);
+            left: 0;
+            bottom: 0;
+            right: 0;
+            &.active {
+                display: block !important;
+            }
+        }
+    }
+    &__icon {
+        font-size: 2.8rem;
+        cursor: pointer;
+    }
+    &__list {
+        display: none;
+        @include min-md {
+            @include flexJustifyAlign(space-between, center);
+        }
+        gap: 2rem;
+        li {
+            p {
+                &:nth-child(1) {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                &:nth-child(2) {
+                    font-size: 1.1rem;
+                    color: gray;
+                }
+            }
+        }
+    }
+    &__support {
+        cursor: pointer;
+        @include flexJustifyAlign(flex-end, center);
+        gap: 1rem;
+        i {
+            font-size: 2.4rem;
+        }
+    }
+}
