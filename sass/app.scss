@@ -37,6 +37,12 @@
     object-position: 50% 50%;
     object-fit: cover;
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+}
 
 @import "./components/header";
 @import "./components/banner";
@@ -47,3 +53,4 @@
 @import "./components/post";
 @import "./components/list-option";
 @import "./components/order";
+@import "./components/reply";

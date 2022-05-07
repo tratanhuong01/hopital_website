@@ -1,0 +1,31 @@
+.reply {
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.185);
+    }
+    hr {
+        border: 0.1rem solid rgba(0, 0, 0, 0.185);
+    }
+    &__item {
+        margin: 2.8rem 0rem;
+        &--top {
+            cursor: pointer;
+            @include flexJustifyAlign(flex-start, center);
+            gap: 1rem;
+            a {
+                font-weight: 700;
+            }
+            span {
+                color: var(--color);
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+        }
+        &--content {
+            font-size: 1.4rem;
+            margin: 0.5rem 0rem;
+        }
+    }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="main">
+        <header id="header" class="header">
+            <div class="wrapper header__content">
+                <div class="header__icon">
+                    <span class="bx bx-menu"></span>
+                </div>
+                <div class="header__logo">
+                    <a href="">
+                        <img src="https://bookingcare.vn/assets/icon/bookingcare-2020.svg" alt="" srcset="">
+                    </a>
+                </div>
+                <ul class="header__list">
+                    <li>
+                        <p>Chuyên khoa</p>
+                        <p>Tìm bác sỹ theo chuyên khoa</p>
+                    </li>
+                    <li>
+                        <p>Chuyên khoa</p>
+                        <p>Tìm bác sỹ theo chuyên khoa</p>
+                    </li>
+                    <li>
+                        <p>Chuyên khoa</p>
+                        <p>Tìm bác sỹ theo chuyên khoa</p>
+                    </li>
+                    <li>
+                        <p>Chuyên khoa</p>
+                        <p>Tìm bác sỹ theo chuyên khoa</p>
+                    </li>
+                </ul>
+                <div class="header__support">
+                    <i class='bx bx-support'></i>
+                    <span>Hổ trợ</span>
+                </div>
+            </div>
+            <div class="header__menu">
+                <ul>
+                    <li><a href="">
+                            Trang chủ
+                        </a></li>
+                    <li><a href="">
+                            Trang chủ
+                        </a></li>
+                    <li><a href="">
+                            Trang chủ
+                        </a></li>
+                    <li>
+                        <div>VỀ BOOKINGCARE</div>
+                    </li>
+                    <li>
+                        <a href="">Về cho bệnh nhân</a>
+                    </li>
+                    <li>
+                        <a href="">Về cho bác sỹ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__menu--overlay">
+            </div>
+        </header>
+        <form class="wrapper ">
+            <div class="order__form">
+                <div class="order__form--top">
+                    <img src="https://cdn.bookingcare.vn/fr/w100/2019/12/31/155650-gs-ha-van-quyet.jpg" alt="">
+                    <div class="order__form--top--content">
+                        <p>ĐẶT LỊCH KHÁM</p>
+                        <p>Giáo sư, Tiến sĩ Hà Văn Quyết</p>
+                        <p>08:30 - 09:00 - Thứ 2 - 09/05/2022</p>
+                    </div>
+                </div>
+                <div class="order__form--price">
+                    <div class="order__form--price--item">
+                        <label for="">
+                            <p>
+                                <input type="radio" name="price-order" id="">
+                                <span>Giá khám</span>
+                            </p>
+                            <p>500.000đ</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="order__form--for">
+                    <div>
+                        <input type="radio" name="order-for" id="">
+                        <label for="">Đặt cho mình </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="order-for" id="">
+                        <label for=""> Đặt cho người thân </label>
+                    </div>
+                </div>
+                <div class="order__form--input">
+                    <span class="bx bxs-user"></span>
+                    <input type="text" placeholder="Họ tên bệnh nhân (bắt buộc)">
+                </div>
+                <p class="order__form--desc">Hãy ghi rõ Họ Và Tên, viết hoa những chữ cái đầu tiên, ví dụ: Trần Văn Phú
+                </p>
+                <div class="order__form--for">
+                    <div>
+                        <input type="radio" name="order-gender" id="">
+                        <label for="">Nam</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="order-gender" id="">
+                        <label for="">Nữ</label>
+                    </div>
+                </div>
+                <div class="order__form--input">
+                    <span class="bx bxs-phone"></span>
+                    <input type="text" placeholder="Số điện thoại (bắt buộc)">
+                </div>
+                <div class="order__form--input">
+                    <span class="bx bxs-calendar"></span>
+                    <input type="date" placeholder="">
+                </div>
+                <div class="order__form--select">
+                    <span class="bx bx-current-location"></span>
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+                    <span class="bx bx-chevron-down"></span>
+                </div>
+                <div class="order__form--select">
+                    <span class="bx bx-current-location"></span>
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+                    <span class="bx bx-chevron-down"></span>
+                </div>
+                <div class="order__form--select">
+                    <span class="bx bx-current-location"></span>
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+                    <span class="bx bx-chevron-down"></span>
+                </div>
+                <div class="order__form--textarea">
+                    <textarea placeholder="Lý do khám"></textarea>
+                    <span class="bx bxs-plus-circle"></span>
+                </div>
+                <div class="order__form--for">
+                    <input type="radio" name="" id="">
+                    <label for="">Thanh toán sau tại cơ sở y tế</label>
+                </div>
+                <div class="order__form--info">
+                    <p>
+                        <span>Giá khám</span>
+                        <span>500.000d</span>
+                    </p>
+                    <p>
+                        <span>Phí đặt lịch</span>
+                        <span>Miễn phí</span>
+                    </p>
+                    <hr>
+                    <p>
+                        <span>Tổng cộng</span>
+                        <span>500.000đ</span>
+                    </p>
+                </div>
+                <p class="order__form--desc">Quý khách vui lòng điền đầy đủ thông tin để tiết kiệm thời gian làm thủ tục
+                    khám</p>
+                <div class="order__form--warning">
+                    <p>LƯU Ý</p>
+                    <ul>
+                        <li>Thông tin bạn cung cấp sẽ được sử dụng làm hồ sơ khám bệnh. Vì vậy khi điền thông tin,
+                            bạn
+                            vui
+                            lòng lưu ý:</li>
+                        <ul>
+                            <li>Ghi rõ họ và tên, viết hoa những chữ cái đầu tiên, ví dụ: Trần Văn Phú </li>
+                            <li>Điền đầy đủ, đúng và kiểm tra lại thông tin trước khi ấn "Xác nhận đặt khám"</li>
+                        </ul>
+                        <li>Tuân thủ quy định phòng chống dịch (đeo khẩu trang, khử khuẩn, khai báo dịch tễ) khi đến
+                            khám.
+                        </li>
+                    </ul>
+                </div>
+                <button class="order__form--button">Xác nhận đặt khám</button>
+                <p class="order__form--desc">Bằng việc xác nhận đặt khám, bạn đã hoàn toàn đồng ý với <span>Điều khoản
+                        sử dụng</span> dịch vụ của
+                    chúng tôi.</p>
+            </div>
+        </form>
+        <footer class="footer" id="footer">
+            <div class="footer__main">
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <div class="footer__main--logo">
+                                <img src="https://bookingcare.vn/assets/icon/bookingcare-2020.svg" alt="">
+                            </div>
+                        </li>
+                        <li>Công ty Cổ phần Công nghệ BookingCare</li>
+                        <li>
+                            <i class='bx bx-current-location'></i>
+                            <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                        </li>
+                        <li>
+                            <i class="bx bx-check"></i>
+                            <p>ĐKKD số: 0106790291. Sở KHĐT Hà Nội cấp ngày 16/03/2015</p>
+                        </li>
+                        <li>
+                            <img src="https://bookingcare.vn/assets/icon/bo-cong-thuong.svg" alt="">
+                            <img src="https://bookingcare.vn/assets/icon/bo-cong-thuong.svg" alt="">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">Liên hệ hợp tác</a>
+                        </li>
+                        <li>
+                            <a href="">Câu hỏi thường gặp</a>
+                        </li>
+                        <li>
+                            <a href="">Điều khoản sử dụng</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách Bảo mật</a>
+                        </li>
+                        <li>
+                            <a href="">Quy trình hỗ trợ giải quyết khiếu nại</a>
+                        </li>
+                        <li>
+                            <a href="">Quy chế hoạt động</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Trụ sở tại Hà Nội</h4>
+                            <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                        </li>
+                        <li>
+                            <h4>Trụ sở tại Hà Nội</h4>
+                            <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                        </li>
+                        <li>
+                            <h4>Trụ sở tại Hà Nội</h4>
+                            <p>28 Thành Thái, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__end">
+                <div class="wrapper footer__end--main">
+                    <span>@20222 BookingCare</span>
+                    <div>
+                        <a href="" class="bx bxl-facebook"></a>
+                        <a href="" class="bx bxl-youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
