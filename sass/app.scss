@@ -44,6 +44,11 @@ select {
     text-overflow: "";
 }
 
+.hidden {
+    display: none;
+}
+
+@import "./variables";
 @import "./components/header";
 @import "./components/banner";
 @import "./components/footer";
@@ -54,3 +59,6 @@ select {
 @import "./components/list-option";
 @import "./components/order";
 @import "./components/reply";
+@import "./components/login";
+
+@import "./components/admin";

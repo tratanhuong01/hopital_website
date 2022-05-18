@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 html {
@@ -29,6 +30,15 @@ a {
 input,
 button {
     border: none;
+}
+
+select option {
+    font-family: var(--font-family);
+}
+
+select {
+    font-family: var(--font-family);
+    color: rgba($color: gray, $alpha: 0.8);
 }
 
 input[type="submit"] {

@@ -1,0 +1,7 @@
+$color-thin: rgb(237, 231, 246);
+$color-bold: rgb(94, 53, 177);
+
+:root {
+    --color-thin: #{$color-thin};
+    --color-bold: #{$color-bold};
+}

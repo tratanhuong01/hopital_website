@@ -1,0 +1,60 @@
+.login {
+    width: 100%;
+    @include flexJustifyAlign(center, center);
+    height: 100vh;
+    position: relative;
+    &__container {
+        width: 40rem;
+        padding: 4rem 2rem 1rem 2rem;
+        border-radius: 0.8rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        & > p {
+            text-align: center;
+            margin: 2rem 0rem;
+            a {
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        & > h2 {
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        & > div {
+            position: relative;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            & .select-arrow {
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+                color: rgba($color: gray, $alpha: 0.8);
+            }
+            & > input,
+            & > select {
+                width: 100%;
+                padding: 1.5rem 4rem;
+                background-color: #fff;
+            }
+            & > span {
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+                color: rgba($color: gray, $alpha: 0.8);
+            }
+        }
+        & > div > button {
+            width: 100%;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            background-color: red;
+            color: #fff;
+        }
+    }
+}

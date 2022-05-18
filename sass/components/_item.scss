@@ -1,15 +1,36 @@
 .item {
     &__post {
-        width: 100%;
+        display: flex;
+
+        &__.row {
+            overflow: hidden;
+        }
         padding: 2rem 0rem;
+        @include max-ss(550px) {
+            margin-left: -2.5rem !important;
+            margin-right: -2.5rem !important;
+        }
         &--heading {
             font-weight: bold;
             font-size: 2.4rem;
             margin: 2.5rem 0rem;
         }
         &--item {
+            flex-shrink: 0;
             display: block;
-            max-width: 100%;
+            @include min-ss(550px) {
+                width: 50%;
+            }
+            @include min-md {
+                width: calc(100% / 3);
+            }
+            @include min-lg {
+                width: 25%;
+            }
+            @include min-ss(550px) {
+                padding-left: 2.5rem !important;
+                padding-right: 2.5rem !important;
+            }
             &--image {
                 padding-top: 56.25%;
             }
@@ -21,16 +42,22 @@
     &__guide {
         width: 100%;
         padding: 2rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
         &--item {
-            max-width: 100%;
             display: flex !important;
             align-items: center;
+            @include min-md {
+                width: 50%;
+            }
             margin-bottom: 2rem;
             &--image {
+                width: 25%;
                 padding-top: 20%;
             }
             &--text {
-                padding-left: 2rem;
+                flex: 1;
+                padding: 0rem 2rem;
                 font-weight: bold;
             }
         }

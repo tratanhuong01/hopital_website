@@ -1,16 +1,28 @@
 .service {
     & .row {
-        margin-left: -2.5rem !important;
-        margin-right: -2.5rem !important;
+        overflow: hidden;
     }
     &__slider {
         margin-top: 3rem;
         cursor: pointer;
         position: relative;
+        display: flex;
+        margin-left: -2.5rem !important;
+        margin-right: -2.5rem !important;
         &--item {
+            flex-shrink: 0;
             position: relative;
-            max-width: 100% !important;
+            display: block;
+            @include min-ss(550px) {
+                width: 50%;
+            }
             @include min-md {
+                width: calc(100% / 3);
+            }
+            @include min-lg {
+                width: 25%;
+            }
+            @include min-ss(550px) {
                 padding-left: 2.5rem !important;
                 padding-right: 2.5rem !important;
             }
