@@ -18,6 +18,7 @@
         &--item {
             flex-shrink: 0;
             display: block;
+            width: 100%;
             @include min-ss(550px) {
                 width: 50%;
             }
@@ -57,7 +58,10 @@
             }
             &--text {
                 flex: 1;
-                padding: 0rem 2rem;
+                padding: 0rem 1rem;
+                @include min-md {
+                    padding: 0rem 2rem;
+                }
                 font-weight: bold;
             }
         }

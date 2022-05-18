@@ -566,11 +566,17 @@ select {
   cursor: pointer;
   position: relative;
   display: flex;
-  margin-left: -2.5rem !important;
-  margin-right: -2.5rem !important;
+}
+
+@media all and (min-width: 550px) {
+  .service__slider {
+    margin-left: -2.5rem !important;
+    margin-right: -2.5rem !important;
+  }
 }
 
 .service__slider--item {
+  width: 100%;
   flex-shrink: 0;
   position: relative;
   display: block;
@@ -676,6 +682,7 @@ select {
 .item__post--item {
   flex-shrink: 0;
   display: block;
+  width: 100%;
 }
 
 @media all and (min-width: 550px) {
@@ -737,8 +744,14 @@ select {
 
 .item__guide--item--text {
   flex: 1;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+  .item__guide--item--text {
+    padding: 0rem 2rem;
+  }
 }
 
 .item__guide--wrapper {
@@ -1505,6 +1518,8 @@ select {
   justify-content: center;
   height: 100vh;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .login__container {

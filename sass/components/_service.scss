@@ -7,9 +7,12 @@
         cursor: pointer;
         position: relative;
         display: flex;
-        margin-left: -2.5rem !important;
-        margin-right: -2.5rem !important;
+        @include min-ss(550px) {
+            margin-left: -2.5rem !important;
+            margin-right: -2.5rem !important;
+        }
         &--item {
+            width: 100%;
             flex-shrink: 0;
             position: relative;
             display: block;
