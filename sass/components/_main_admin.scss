@@ -1,0 +1,134 @@
+.dashboard {
+    &__top {
+        display: flex;
+        gap: 5rem;
+    }
+    &__item {
+        width: 25%;
+        border-radius: 1.2rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 1rem;
+        background-color: #fff;
+        &--top {
+            @include flexJustifyAlign(space-between, center);
+            margin-bottom: 1rem;
+            span {
+                &:nth-child(1) {
+                    font-weight: 500;
+                }
+                &:nth-child(2) {
+                    @include flexJustifyAlign(center, center);
+                    border-radius: 0.5rem;
+                    width: 3.2rem;
+                    color: var(--color-bold);
+                    height: 3.2rem;
+                    background-color: var(--color-thin);
+                }
+            }
+        }
+        &--length {
+            font-size: 5.4rem;
+            padding: 2rem;
+            opacity: 0.6;
+            font-weight: 700;
+        }
+    }
+    &__content {
+        p {
+            padding: 2rem 2rem;
+            font-weight: 700;
+            color: var(--color-bold);
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+            tr {
+                th {
+                    color: var(--color-bold);
+                }
+                td,
+                th {
+                    text-align: center;
+                    padding: 1rem;
+                    border: 1px solid var(--color-bold);
+                }
+            }
+        }
+    }
+}
+
+.admin_modal {
+    &.active {
+        display: block;
+    }
+    display: none;
+    &__main {
+        &--title {
+            border-bottom: 0.1rem solid rgba(128, 128, 128, 0.3);
+            text-align: center;
+            padding: 0.5rem 0rem;
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+        &--close {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 100rem;
+            background-color: gray;
+            @include flexJustifyAlign(center, center);
+        }
+        width: 50rem;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 0.8rem;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
+.color-red {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.4rem 0rem;
+}
+
+.admin_value {
+    &__top {
+        @include flexJustifyAlign(space-between, center);
+        ul {
+            li {
+                width: max-content;
+                padding: 1rem 3rem;
+                border-radius: 0.8rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                &.orange {
+                    color: #fff;
+                    background-color: rgba(255, 166, 0, 1);
+                }
+            }
+        }
+        input {
+            width: 30rem;
+            padding: 1rem;
+            border: 0.1rem solid gray;
+        }
+    }
+}
