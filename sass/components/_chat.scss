@@ -1,0 +1,292 @@
+.chat {
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    &__left {
+        background-color: #fff;
+        width: 25%;
+        padding: 2rem;
+        &--search {
+            position: relative;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 1rem;
+            }
+            input {
+                padding: 1.1rem;
+                padding-left: 4rem;
+                border-radius: 100rem;
+                width: 100%;
+                border: 0.1rem solid gray;
+            }
+            margin: 1rem 0rem;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        margin-bottom: 1rem;
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+        &.active {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 0.4rem;
+        @include flexJustifyAlign(flex-start, center);
+        gap: 1rem;
+        &--content {
+            flex: 1;
+            p {
+                &:nth-child(1) {
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                &:nth-child(2) {
+                    font-size: 1.4rem;
+                    color: gray;
+                    opacity: 0.7;
+                }
+            }
+        }
+        &--time {
+            padding: 0rem 1rem;
+            p {
+                margin-left: auto;
+                &:nth-child(1) {
+                    color: gray;
+                    opacity: 0.6;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                }
+                &:nth-child(2) {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 100rem;
+                    background-color: var(--color-bold);
+                    color: #fff;
+                    @include flexJustifyAlign(center, center);
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        &--image {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 100rem;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 100rem;
+            }
+        }
+    }
+    &__right {
+        width: 75%;
+        background-color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        &--top {
+            padding: 2rem 1rem;
+            text-align: right;
+            span {
+                font-weight: 700;
+                opacity: 0.7;
+            }
+        }
+        &--content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            &--head {
+                padding: 1rem;
+                border: 0.1rem solid rgba(128, 128, 128, 0.3);
+                @include flexJustifyAlign(flex-start, center);
+                gap: 1rem;
+                div {
+                    &:nth-child(1) {
+                        position: relative;
+                        img {
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 100rem;
+                        }
+                        span {
+                            width: 1rem;
+                            height: 1rem;
+                            border-radius: 100rem;
+                            right: 0.5rem;
+                            display: block;
+                            background-color: green;
+                            position: absolute;
+                            bottom: 0.5rem;
+                        }
+                    }
+                    &:nth-child(2) {
+                        p {
+                            &:nth-child(1) {
+                                font-weight: 600;
+                                font-size: 1.5rem;
+                            }
+                            &:nth-child(2) {
+                                opacity: 0.7;
+                                font-size: 1.2rem;
+                                margin-top: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+            &--content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+                padding: 1rem;
+                border: 0.1rem solid rgba(128, 128, 128, 0.3);
+            }
+            &--control {
+                margin-top: 1rem;
+                // padding: 1rem;
+                // border: 0.1rem solid rgba(128, 128, 128, 0.3);
+                @include flexJustifyAlign(flex-start, center);
+                gap: 2rem;
+                input {
+                    flex: 1;
+                    padding: 1.3rem;
+                    border: 0.1rem solid rgba(128, 128, 128, 0.3);
+                }
+                span {
+                    font-size: 2.4rem;
+                    cursor: pointer;
+                    color: var(--color-bold);
+                }
+            }
+        }
+    }
+}
+
+.message {
+    &__item {
+        &.flex-start {
+            @include flexJustifyAlign(flex-start, flex-start);
+        }
+        margin-bottom: 1rem;
+        gap: 1rem;
+        &--image {
+            width: 4rem;
+            height: 4rem;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 100rem;
+            }
+            span {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 100rem;
+                right: 0.1rem;
+                display: block;
+                background-color: green;
+                position: absolute;
+                bottom: 0.1rem;
+            }
+        }
+        &--content {
+            max-width: 75%;
+            p {
+                padding: 1rem 1.2rem;
+                border-radius: 0.8rem;
+                font-size: 1.5rem;
+                width: max-content;
+                background-color: rgba(128, 128, 128, 0.24);
+            }
+            span {
+                display: block;
+                padding-top: 0.4rem;
+                padding-left: 0.4rem;
+                font-size: 1.2rem;
+                font-weight: 600;
+                opacity: 0.5;
+            }
+        }
+        &.flex-end {
+            @include flexJustifyAlign(flex-end, flex-start);
+        }
+        &.flex-end &--content {
+            span {
+                display: block;
+                text-align: right;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+.button-chat-popup {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: var(--color-bold);
+    & > div {
+        width: 100%;
+        @include flexJustifyAlign(center, center);
+        height: 100%;
+        border-radius: 100rem;
+        position: relative;
+        & > span {
+            cursor: pointer;
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+}
+
+.chat-popup {
+    &__form {
+        display: none;
+        &.active {
+            display: block;
+        }
+        border-radius: 0.8rem;
+        &--title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 0.1rem solid rgba(128, 128, 128, 0.3);
+            margin-bottom: 1rem;
+        }
+        &--close {
+            position: absolute;
+            top: 0.5rem;
+            font-size: 3.2rem;
+            cursor: pointer;
+            right: 0.5rem;
+        }
+        padding: 1rem;
+        width: 36rem;
+        background-color: #fff;
+        border: 0.1rem solid rgba(128, 128, 128, 0.3);
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+        margin-right: 2rem;
+    }
+}
+
+.chat-popup__form .chat__right--content .chat__right--content--content {
+    height: 28rem;
+    flex: unset;
+}
